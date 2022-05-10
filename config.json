@@ -1,0 +1,17 @@
+{
+  "cookie": {
+    "secure":false,
+    "sameSite": "Lax",
+    "httpOnly":true
+  },
+  "platform" : {
+    "domain": "fakeplatform.com",
+    "httpPort": 3000,
+    "httpsPort": 3001
+  },
+  "app": {
+    "domain": "app.fakeplatform.com",
+    "httpPort": 3030
+  },
+  "appCorsOrigin": "http://app.fakeplatform.com:3030"
+}
