@@ -48,9 +48,9 @@ app
 .use(router.allowedMethods());
 console.log("Starting server")
 console.log("Login URL: https://"+config.platform.domain+":"+config.platform.httpsPort+"/login")
-console.log("           http://"+config.platform.domain+":"+config.platform.httpsPort+"/login")
+console.log("           http://"+config.platform.domain+":"+config.platform.httpPort+"/login")
 console.log("CORS URL:  https://"+config.platform.domain+":"+config.platform.httpsPort+config.platform.corsEndpointPath)
-console.log("           http://"+config.platform.domain+":"+config.platform.httpsPort+config.platform.corsEndpointPath)
+console.log("           http://"+config.platform.domain+":"+config.platform.httpPort+config.platform.corsEndpointPath)
 
 
 http.createServer(app.callback()).listen(config.platform.httpPort);
