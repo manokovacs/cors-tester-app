@@ -7,7 +7,8 @@
   "platform" : {
     "domain": "fakeplatform.com",
     "httpPort": 3000,
-    "httpsPort": 3001
+    "httpsPort": 3001,
+    "corsEndpointPath": "/cors"
   },
   "app": {
     "domain": "app.fakeplatform.com",

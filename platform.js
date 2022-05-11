@@ -25,7 +25,7 @@ router.get('/login', (ctx, next) =>{
 
 
 
-router.all('/cors', (ctx, next) =>{
+router.all(config.platform.corsEndpointPath, (ctx, next) =>{
   console.log("cors stuff")
   ctx.set( {
     "access-control-allow-credentials": "true",
@@ -49,8 +49,8 @@ app
 console.log("Starting server")
 console.log("Login URL: https://"+config.platform.domain+":"+config.platform.httpsPort+"/login")
 console.log("           http://"+config.platform.domain+":"+config.platform.httpsPort+"/login")
-console.log("CORS URL:  https://"+config.platform.domain+":"+config.platform.httpsPort+"/cors")
-console.log("           http://"+config.platform.domain+":"+config.platform.httpsPort+"/cors")
+console.log("CORS URL:  https://"+config.platform.domain+":"+config.platform.httpsPort+config.platform.corsEndpointPath)
+console.log("           http://"+config.platform.domain+":"+config.platform.httpsPort+config.platform.corsEndpointPath)
 
 
 http.createServer(app.callback()).listen(config.platform.httpPort);
