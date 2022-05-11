@@ -22,6 +22,9 @@ fs.readdir("./app", (err, files) => {
   files.forEach(function (file) {
     console.log("           http://" + config.app.domain + ":" + config.app.httpPort + "/"+file);
   });
+  files.forEach(function (file) {
+    console.log("           https://" + config.app.domain + ":" + config.app.httpsPort + "/"+file);
+  });
 })
 
 http.createServer(app.callback()).listen(config.app.httpPort);

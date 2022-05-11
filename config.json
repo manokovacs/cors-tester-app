@@ -12,7 +12,8 @@
   },
   "app": {
     "domain": "app.fakeplatform.com",
-    "httpPort": 3030
+    "httpPort": 3029,
+    "httpsPort": 3030
   },
   "appCorsOrigin": "http://app.fakeplatform.com:3030"
 }
