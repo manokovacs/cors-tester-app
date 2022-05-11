@@ -9,7 +9,7 @@ User can adjust the cookie type issued, the domains and custom calls can be adde
 
 ### Pointing domain to localhost
 
-Edit `/hosts/etc` and add:
+Edit `/etc/hosts` and add:
 
 ```shell
 127.0.0.1 fakeplatform.com
