@@ -31,7 +31,7 @@ router.all(config.platform.corsEndpointPath, (ctx, next) =>{
     "access-control-allow-credentials": "true",
     "access-control-allow-methods": "GET, POST, OPTIONS",
     "access-control-allow-headers": "Content-type, x-requested-by",
-    "access-control-allow-origin": "http://"+config.app.domain+":"+config.app.httpPort
+    "access-control-allow-origin": config.appCorsOrigin
   })
   if(ctx.request.method =="OPTIONS") {
     console.log("cors stuff options")

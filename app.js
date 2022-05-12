@@ -28,3 +28,8 @@ fs.readdir("./app", (err, files) => {
 })
 
 http.createServer(app.callback()).listen(config.app.httpPort);
+
+https.createServer({
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+}, app.callback()).listen(config.app.httpsPort);
