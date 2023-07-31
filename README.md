@@ -5,6 +5,7 @@ the service provider that may issue a cookie and can run an `app` that makes cor
 
 User can adjust the cookie type issued, the domains and custom calls can be added into the source-code.
 
+
 ## Setup
 
 ### Pointing domain to localhost
